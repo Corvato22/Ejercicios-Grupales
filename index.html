@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Tiendita</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Tiendita</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="bienvenida">
+            <div class="container">
+                <h3 class="descripcion">
+                    LA MEJOR TIENDITA DE TODAS LAS <strong>TIENDITAS</strong>
+                </h3>
+            </div>
+        </div>
+
+        <div class="row" id="items"></div>
+
+        <template id="template-card">
+            <div class="card">
+                <div class="actual">
+                    <img class="foto" src="" alt="">
+                    <h5 class="producto"></h5>
+                    <button type="button" class="detalle">Agregar</button>
+                </div>
+                <div class="apertura">
+                    <p class="parrafo">P</p>
+                    Precio: <h5 class="precio"></h5>
+                </div>
+
+
+            </div>
+
+        </template>
+
+    </main>
+
+
+    <footer class="footer">
+        <h1> Jhon Cabeza & Carlos Uribe ©</h1>
+    </footer>
+
+    <script src="./scripts/script.js" type="module"></script>
+</body>
+
+</html>

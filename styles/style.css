@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+:root {
+    --colorFondo: #FFF8D9;
+    --colorFondo2: #D5DBB3;
+    --colorPrincipal: #EBA83A;
+    --colorSegundario: #BB371A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    background-color: var(--colorFondo);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--colorPrincipal);
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.875rem;
+    font-family: 'Lobster', cursive;
+}
+
+header h1 {
+    transition: .5s;
+}
+
+header h1:hover {
+    text-shadow: 10px 8px 5px #1f1f1f3d;
+    transition: .5s;
+    transform: scale(1.20, 1.20);
+}
+
+.main {
+    padding-top: 5rem;
+}
+
+.bienvenida {
+    min-height: 40.625rem;
+    background: url(https://user-images.githubusercontent.com/89666937/134590289-028334b0-f90e-45fc-a38d-b8d84105153f.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    /* background-attachment: fixed; */
+}
+
+.bienvenida .container {
+    height: 25em;
+    width: 93.75em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 10px;
+}
+
+.bienvenida .descripcion {
+    text-align: center;
+    font-weight: normal;
+    font-size: 5em;
+    line-height: 1.75em;
+    max-width: 50%;
+    color: #FFF8D9;
+    line-height: 130%;
+    text-shadow: 10px 8px 5px #1f1f1f3d;
+}
+
+.card {
+    color: black;
+    margin: 2em 0.5em 1.25em 0.5em;
+    padding: 15px;
+    background-color: var(--colorFondo2);
+    border-radius: 5px;
+    min-width: 255px;
+    transition: width 1s;
+    display: flex;
+}
+
+.card .apertura {
+    display: none;
+}
+
+.card:hover {
+    transition: .5s;
+    transform: scale(1.01, 1.01);
+    box-shadow: 4px 4px 8px 1px grey;
+}
+
+.card .actual {
+    max-width: 14.0625em;
+    margin: 0.625rem 0rem 0rem 0rem;
+}
+
+.card .actual .producto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 65px;
+    font-size: 1.0625em;
+    flex-wrap: wrap;
+}
+
+.apertura {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 0.9375rem;
+    font-size: 1.5625rem;
+}
+
+.precio {
+    font-size: 25px;
+    color: #BB371A;
+}
+
+.card .apertura .parrafo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    height: 65px;
+    font-size: 17px;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 60px 0px;
+}
+
+.foto {
+    width: 14.0625rem;
+    display: flex;
+    cursor: pointer;
+    border-color: var(--colorSegundario);
+}
+
+.detalle {
+    background-color: var(--colorPrincipal);
+    color: var(--colorFondo);
+    width: 100%;
+    font-size: 1.0625em;
+    border: none;
+    transition-duration: 0.3s;
+}
+
+.detalle:hover {
+    background-color: var(--colorSegundario);
+    color: var(--colorFondo);
+    cursor: pointer;
+}
+
+.footer {
+    background-color: var(--colorPrincipal);
+    width: 100%;
+    height: 3.75rem;
+    margin: 0, auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-family: 'Lobster', cursive;
+}
