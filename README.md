@@ -1,7 +1,9 @@
 # Ejercicio Grupal
 
 RETO JavaScript:
+
 Aplicación La Tiendita
+
 A continuación, se describen las consideraciones técnicas que se
 deben tener en cuenta para brindar solución al producto a entregar
 para cumplir con el reto grupal.
